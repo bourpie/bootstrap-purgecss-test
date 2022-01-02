@@ -1,0 +1,120 @@
+.section-hero {
+    height: 100vh;
+    padding-bottom: 160px;
+}
+
+.section-hero-text {
+
+    height: calc(639px - 96px);
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 73px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        background-size: 66%;
+    }
+}
+
+.surtitre {
+    font-weight: normal normal 600 12px/24px Open Sans;
+    letter-spacing: 0.12px;
+    color: $bleu-clair;
+
+    @include media-breakpoint-up(md) {
+        font: normal normal 600 18px/24px Open Sans;
+        letter-spacing: 0.45px;
+
+    }
+
+}
+
+.titre-page-accueil {
+    overflow: hidden;
+
+    .titre-slider {
+
+        font: normal normal 300 24px/36px Open Sans;
+        letter-spacing: -0.6px;
+        color: #FFFFFF;
+
+        @include media-breakpoint-up(md) {
+            font: normal normal 100 54px/64px Roboto;
+            letter-spacing: 0px;
+
+        }
+
+
+    }
+
+    .titre-gras {
+
+        font: normal normal bold 28px/38px Roboto;
+        letter-spacing: -0.7px;
+        color: #FFFFFF;
+
+        @include media-breakpoint-up(md) {
+            font: normal normal bold 54px/64px Roboto;
+            letter-spacing: 0px;
+            margin-bottom: 34px;
+        }
+
+
+    }
+}
+
+.section-hero-slogan {
+
+    font: normal normal normal 13px/24px Open Sans;
+    letter-spacing: 0.13px;
+    color: $bleu-clair;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+        font: normal normal normal 16px/24px Open Sans;
+        letter-spacing: 2.4px;
+        margin-top: 34px;
+    }
+
+}
+
+.titre-souligner-rose {
+    border-bottom: 5px solid $rose;
+}
+
+
+.section-hero {
+    height: 623px;
+    background-image: url('/assets/images/bg_header-accueil-v2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff !important;
+    background-position: top -22px left 0;
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        background-size: 66%;
+    }
+
+
+    &-img {
+        img {
+            position: absolute;
+            left: -24px;
+            top: 370px;
+            width: 405px;
+            height: auto;
+
+            @include media-breakpoint-up(md) {
+                position: relative;
+                left: -37px;
+                top: 134px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+        }
+    }
+}

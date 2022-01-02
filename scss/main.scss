@@ -1,0 +1,11 @@
+@import 'juridiqc/config';
+@import 'bootstrap';
+
+@import 'juridiqc/animations';
+@import 'juridiqc/header';
+@import 'juridiqc/hero';
+@import 'juridiqc/themes';
+
+.old-browser {
+    display: none;
+}

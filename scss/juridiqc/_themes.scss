@@ -1,0 +1,37 @@
+.section-themes {
+    height: 100vh;
+    margin-top: -260px;
+    position: relative;
+    z-index: 1;
+
+    .card {
+        margin-bottom: 1.5rem;
+        text-decoration: none;
+        padding: 64px 60px;
+        transform: translate3d(0, 0, 0);
+        transition: all .3s ease-in-out;
+
+        .card-img-top {
+            max-width: 64px;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-body {
+            padding: 0;
+        }
+
+
+        .card-title {
+            font: normal normal bold 21px/31px Roboto;
+            letter-spacing: 0px;
+            color: #223654;
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            transform: translate3d(0, -20px, 0) !important;
+            box-shadow: $box-shadow-sm;
+        }
+    }
+
+}

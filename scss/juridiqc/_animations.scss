@@ -1,0 +1,49 @@
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.delay-0-5s {
+    animation-delay: .5s;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-1-5s {
+    animation-delay: 1.5s;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.carousel-fade {
+    .carousel-inner {
+
+        .carousel-item {
+            opacity: 0;
+        }
+
+        .active {
+            opacity: 1;
+        }
+    }
+}
